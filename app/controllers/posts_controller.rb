@@ -14,7 +14,6 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
-       binding.pry
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @post }
